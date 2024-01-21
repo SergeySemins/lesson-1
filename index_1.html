@@ -13,14 +13,42 @@
 			<h1>Форма отправки данных пользователя</h1>	
 		</header>
 		<main>
-			<ol>
-				<li><input type="text" name="username" placeholder="Введите ваше имя"></li>
-				<li><input type="tel" name="number" placeholder="Введите номер телефона"></li>
-				<li><input type="email" name="mail" placeholder="Введите ваш эмеил"></li>
-				<li><input type="number" name="pass" placeholder="Введите пароль"></li>
-				<li><input type="" name="" ></li>
-				<li><textarea name="text" placeholder="Пожелания и предложения"></textarea></li>
-			</ol></main>
+			<form action="signing" method="post">
+				<div>
+					<input type="text" name="username" placeholder="name">
+				</div>				
+				<div>
+					<input type="tel" name="number" placeholder="phone number">
+				</div>
+				<div>
+					<input type="email" name="email" placeholder="email">
+				<div>
+				<div>
+					<input type="password" name="pass" placeholder="password">
+				</div>
+				<div>
+					<fieldset>
+						<div>
+							<legend>Select color</legend>
+								<input type="radio" name="question" id="red"
+								value="red" checked>
+								<label for="red">red</label> 
+						</div>
+						<div>
+							<input type="radio" name="question" id="green"
+								value="green">
+								<label for="green">green</label> 
+						</div>
+						<div>
+							<input type="radio" name="question" id="blue"
+								value="blue">
+								<label for="blue">blue</label> 
+						<div>
+							<textarea name="text" placeholder="other" id="" cols="30" rows="10"></textarea>
+						</div>
+					</fieldset>
+				</div>
+			</form>
 		<footer>
 			<input type="submit" name="">
 			<input type="reset" name="">
